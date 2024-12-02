@@ -99,3 +99,227 @@ h1 {
   border: 1px solid var(--white, #fff);
   background: var(--fond-sous-titre, rgba(255, 255, 255, 0.15));
 }
+
+.titreclasse {
+  display: flex;
+  height: 112px;
+  padding: 7px 10px;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 30px 10px 30px 30px;
+  border: 2px solid var(--black, #000);
+}
+
+.petittitre {
+  color: var(--black, #000);
+  text-align: center;
+  font-family: "Encode Sans Expanded";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.Titre {
+  color: var(--black, #000);
+  text-align: center;
+  font-family: "Encode Sans Expanded";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.card {
+  display: flex;
+  width: 451px;
+  height: 334px;
+  padding: 0px 10px;
+  flex-direction: column;
+  align-items: center;
+  gap: 31px;
+  flex-shrink: 0;
+  border-radius: 0px 20px 20px 20px;
+}
+.titrecard {
+  color: var(--black, #000);
+  text-align: center;
+  font-family: "Encode Sans Expanded";
+  font-size: 38px;
+  font-weight: 500;
+  text-transform: uppercase;
+  height: 96px;
+  display: flex;
+  justify-content: center;
+}
+.textcard {
+  color: var(--black, #000);
+  text-align: center;
+  align-self: stretch;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+button {
+  display: flex;
+  padding: 0px 10px;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  width: 197px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  border-radius: 30px 10px 30px 30px;
+  border: 1px solid var(--vert, #556854);
+  color: var(--vert, #556854);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: transparent;
+}
+
+.textcard1 {
+  display: flex;
+  width: 732px;
+  flex-direction: column;
+  align-items: center;
+  gap: 29px;
+  color: var(--black, #000);
+  text-align: center;
+
+  /* montserrat lighht */
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+svg {
+  width: 30px;
+  height: 40px;
+}
+
+.miniinfo {
+  display: flex;
+  width: 260px;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.petittitrefooter {
+  color: var(--black, #000);
+
+  /* bold text */
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  align-self: flex-start;
+}
+.adressep {
+  color: var(--black, #000);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+i {
+  color: var(--vert, #556854);
+  font-family: "Font Awesome 6 Free";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.phonetel {
+  color: var(--black, #000);
+
+  /* footer */
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.debutfooter {
+  background: var(--info-footer-top, #bebebe);
+}
+
+.logofooter {
+  height: 52px;
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+  margin-left: 25%;
+}
+
+.buttonlangue p {
+  color: var(--black, #000);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  display: flex;
+  align-items: flex-start;
+  border-radius: 30px 15px 30px 30px;
+  border: 1px solid var(--black, #000);
+  display: flex;
+  width: 76px;
+  height: 31px;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+}
+
+.footer2 {
+  display: flex;
+  width: 724px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reseaux {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  align-self: stretch;
+}
+
+.premier {
+  display: flex;
+  width: 163px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.premier .petittitrefooter {
+  color: var(--black, #000);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
