@@ -195,18 +195,14 @@ button {
   gap: 29px;
   color: var(--black, #000);
   text-align: center;
-
-  /* montserrat lighht */
   font-family: Montserrat;
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
 }
-svg {
-  width: 30px;
-  height: 40px;
-}
+
+// FOOTER //
 
 .miniinfo {
   display: flex;
@@ -218,8 +214,6 @@ svg {
 
 .petittitrefooter {
   color: var(--black, #000);
-
-  /* bold text */
   font-family: Montserrat;
   font-size: 20px;
   font-style: normal;
@@ -322,4 +316,48 @@ i {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+.footer3 {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.buttonInside {
+  position: relative;
+  margin-bottom: 10px;
+}
+#container {
+  width: 200px;
+}
+input {
+  height: 25px;
+  width: 100%;
+  padding-left: 10px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+button {
+  position: absolute;
+  right: 0px;
+  top: 4px;
+  border: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  outline: none;
+  text-align: center;
+  font-weight: bold;
+  padding: 2px;
+}
+button:hover {
+  cursor: pointer;
+}
+#help {
+  display: none;
+  font-style: italic;
+  font-size: 0.8em;
 }
