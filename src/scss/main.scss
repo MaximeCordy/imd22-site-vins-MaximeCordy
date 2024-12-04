@@ -66,9 +66,15 @@ video {
 
 .imgbouteilles {
   position: absolute;
-  margin-top: -51%;
+  margin-top: -49%;
+  margin-left: -7%;
 }
 
+.languehaut {
+  text-align: end;
+  margin-right: 2%;
+  margin-bottom: 1%;
+}
 .headergauche {
   display: flex;
   align-items: center;
@@ -158,13 +164,13 @@ h1 {
   border: 2px solid var(--black, #000);
 }
 .background-video {
-  position: absolute; /* Place la vidéo derrière le texte */
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100%; /* Prend toute la largeur */
-  height: 100%; /* Prend toute la hauteur */
-  object-fit: cover; /* La vidéo couvre toute la zone sans déformation */
-  z-index: -1; /* Place la vidéo derrière tout le contenu */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 .image {
   position: absolute;
@@ -245,6 +251,13 @@ button {
   font-size: 20px;
   font-weight: 500;
   background-color: transparent;
+  transition-duration: 1s;
+}
+
+button:hover {
+  border-radius: 30px 10px 30px 30px;
+  border: 1px solid #556854;
+  background: rgba(85, 104, 84, 0.34);
 }
 
 .textcard1 {
@@ -323,8 +336,13 @@ i {
   margin-left: 25%;
 }
 
-.buttonlangue p {
-  color: var(--black, #000);
+.language-selector {
+  position: relative;
+  display: inline-block;
+}
+
+.language-button {
+  color: var(--black, #ffffff);
   text-align: center;
   font-family: Montserrat;
   font-size: 16px;
@@ -334,15 +352,50 @@ i {
   display: flex;
   align-items: flex-start;
   border-radius: 30px 15px 30px 30px;
-  border: 1px solid var(--black, #000);
+  border: 1px solid var(--black, #ffffff);
   display: flex;
   width: 76px;
   height: 31px;
   justify-content: center;
   align-items: center;
   gap: 64px;
+  cursor: pointer;
+
+  transition: background-color 0.3s;
 }
 
+.language-button:hover {
+  background-color: #ffffff00;
+}
+
+.language-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: transparent;
+
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.language-menu a {
+  display: block;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.language-menu a:hover {
+  background-color: transparent;
+}
 .footer2 {
   display: flex;
   width: 724px;
@@ -399,18 +452,7 @@ input {
   border: none;
   outline: none;
 }
-button {
-  right: 0px;
-  top: 4px;
-  border: none;
-  height: 20px;
-  width: 20px;
-  border-radius: 100%;
-  outline: none;
-  text-align: center;
-  font-weight: bold;
-  padding: 2px;
-}
+
 button:hover {
   cursor: pointer;
 }

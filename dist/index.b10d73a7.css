@@ -5026,8 +5026,15 @@ img, video {
 }
 
 .imgbouteilles {
-  margin-top: -51%;
+  margin-top: -49%;
+  margin-left: -7%;
   position: absolute;
+}
+
+.languehaut {
+  text-align: end;
+  margin-bottom: 1%;
+  margin-right: 2%;
 }
 
 .headergauche, .headerdroite {
@@ -5204,7 +5211,14 @@ button {
   font-family: Montserrat;
   font-size: 20px;
   font-weight: 500;
+  transition-duration: 1s;
   display: flex;
+}
+
+button:hover {
+  background: #55685457;
+  border: 1px solid #556854;
+  border-radius: 30px 10px 30px 30px;
 }
 
 .textcard1 {
@@ -5280,10 +5294,16 @@ i {
   padding: 10px;
 }
 
-.buttonlangue p {
-  color: var(--black, #000);
+.language-selector {
+  display: inline-block;
+  position: relative;
+}
+
+.language-button {
+  color: var(--black, #fff);
   text-align: center;
-  border: 1px solid var(--black, #000);
+  border: 1px solid var(--black, #fff);
+  cursor: pointer;
   border-radius: 30px 15px 30px 30px;
   justify-content: center;
   align-items: center;
@@ -5295,7 +5315,39 @@ i {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  transition: background-color .3s;
   display: flex;
+}
+
+.language-button:hover {
+  background-color: #fff0;
+}
+
+.language-menu {
+  z-index: 1000;
+  background-color: #0000;
+  border-radius: 5px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  overflow: hidden;
+}
+
+.language-menu a {
+  color: #fff;
+  padding: 10px 20px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-decoration: none;
+  display: block;
+}
+
+.language-menu a:hover {
+  background-color: #0000;
 }
 
 .footer2 {
@@ -5355,19 +5407,6 @@ input {
   width: 100%;
   height: 25px;
   padding-left: 10px;
-}
-
-button {
-  text-align: center;
-  border: none;
-  border-radius: 100%;
-  outline: none;
-  width: 20px;
-  height: 20px;
-  padding: 2px;
-  font-weight: bold;
-  top: 4px;
-  right: 0;
 }
 
 button:hover {
