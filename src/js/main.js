@@ -22,6 +22,10 @@
 //   const menu = document.getElementById("languageMenu");
 //   menu.style.display = menu.style.display === "block" ? "none" : "block";
 // }
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
 
 var selectors = document.querySelectorAll(".language-selector");
 
@@ -42,35 +46,3 @@ selectors.forEach((selector) => {
     });
   });
 });
-
-// // Sélectionner une langue et la mémoriser
-// function selectLanguage(language) {
-//   localStorage.setItem("selectedLanguage", language);
-//   updateButtonText(language);
-//   const menu = document.getElementById("languageMenu");
-//   menu.style.display = "none";
-// }
-
-// // Mettre à jour le texte du bouton
-// function updateButtonText(language) {
-//   const button = document.getElementById("selectedLanguage");
-//   button.textContent = language;
-// }
-
-// // Ferme le menu si on clique ailleurs
-// document.addEventListener("click", function (event) {
-//   const menu = document.getElementById("languageMenu");
-//   const button = document.querySelector(".language-button");
-
-//   if (!menu.contains(event.target) && !button.contains(event.target)) {
-//     menu.style.display = "none";
-//   }
-// });
-
-// // Charger la langue sélectionnée au démarrage
-// document.addEventListener("DOMContentLoaded", function () {
-//   const savedLanguage = localStorage.getItem("selectedLanguage");
-//   if (savedLanguage) {
-//     updateButtonText(savedLanguage);
-//   }
-// });
