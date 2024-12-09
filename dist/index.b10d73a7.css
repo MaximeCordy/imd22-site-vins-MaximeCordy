@@ -5223,7 +5223,7 @@ h1 {
 .imgbio {
   margin-top: 13%;
   margin-bottom: 15%;
-  margin-left: 13%;
+  margin-left: 14%;
   scale: 1.1;
 }
 
@@ -5267,6 +5267,7 @@ button:hover {
   gap: 29px;
   width: 732px;
   margin-bottom: 13%;
+  margin-left: 12%;
   font-family: Montserrat;
   font-size: 20px;
   font-style: normal;
