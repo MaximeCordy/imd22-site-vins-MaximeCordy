@@ -46,3 +46,19 @@ selectors.forEach((selector) => {
     });
   });
 });
+
+function toggleContent(index) {
+  const containers = document.querySelectorAll(".container");
+  const content = containers[index].querySelector(".content");
+  const arrow = containers[index].querySelector(".arrow");
+
+  if (content.style.maxHeight) {
+    // Fermer le conteneur
+    content.style.maxHeight = null;
+    arrow.style.transform = "rotate(0deg)";
+  } else {
+    // Ouvrir le conteneur
+    content.style.maxHeight = content.scrollHeight + "px";
+    arrow.style.transform = "rotate(180deg)";
+  }
+}
