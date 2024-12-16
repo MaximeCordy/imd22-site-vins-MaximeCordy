@@ -16,6 +16,10 @@
   </head>
   <body>
     <div class="bigheader">
+      <div class="iconheader">
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-basket-shopping"></i>
+      </div>
       <div class="languehaut">
         <div class="language-selector">
           <button class="language-button" id="selectedLanguage">Langues</button>
@@ -32,8 +36,22 @@
         <div class="headergauche">
           <p>Vente en ligne</p>
           <p>Philosophie</p>
-          <a href="/vinrouge.html"><p>Vins</p></a>
+          <a href="#menu" class="menubtn">MENU</a>
+          <nav id="menu" class="menu" role="navigation">
+            <ul>
+              <li class="parent sousmenu">
+                <div class="vinmenu">
+                  <a href="#">VINS</a>
+                </div>
+                <ul class="sousrubrique">
+                  <li><a href="/vinrouge.html">Blanc</a></li>
+                  <li><a href="/vinblanc.html">Rouge</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
         </div>
+
         <div class="logo">
           <a href="/index.html">
             <img src="/vin%201.f8948c66.png" alt="logo" data-aos="fade"></a>

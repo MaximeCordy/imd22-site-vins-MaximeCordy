@@ -639,6 +639,20 @@ function toggleContent(index) {
 document.addEventListener("DOMContentLoaded", ()=>{
     AOS.init();
 });
+$(document).ready(function() {
+    $("body").addClass("js");
+    var $menu = $("#menu"), $menulink = $(".menubtn"), $menuTrigger = $(".sousmenu > a");
+    $menulink.click(function(e) {
+        e.preventDefault();
+        $menulink.toggleClass("select");
+        $menu.toggleClass("select");
+    });
+    $menuTrigger.click(function(e) {
+        e.preventDefault();
+        var $this = $(this);
+        $this.toggleClass("select").next("ul").toggleClass("select");
+    });
+});
 
 },{}]},["j2YDk","1SICI"], "1SICI", "parcelRequire0300")
 

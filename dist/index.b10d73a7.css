@@ -10,6 +10,40 @@ a {
   text-decoration: none;
 }
 
+.iconheader i {
+  color: #fff;
+  scale: .7;
+}
+
+.iconheader {
+  color: #fff;
+  flex-direction: row;
+  gap: 13%;
+  display: flex;
+}
+
+.iconheader2 i {
+  color: #000;
+  scale: .7;
+}
+
+.iconheader2 {
+  color: #000;
+  flex-direction: row;
+  gap: 13%;
+  display: flex;
+}
+
+.bigheader {
+  align-items: flex-end;
+  gap: 13%;
+  width: 157px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 87%;
+  display: flex;
+}
+
 .header {
   border: 1px solid var(--white, #fff);
   border-radius: 30px 10px 30px 30px;
@@ -73,6 +107,15 @@ a {
   margin-top: 25%;
   margin-bottom: 5%;
   margin-left: 25%;
+}
+
+.vinmenu {
+  color: var(--white, #fff);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 img, video {
@@ -5099,6 +5142,7 @@ img, video {
 
 .languehaut {
   text-align: end;
+  margin-top: 1%;
   margin-bottom: 1%;
   margin-right: 2%;
 }
@@ -5922,5 +5966,79 @@ body[data-aos-easing="new-easing"] [data-aos], [data-aos][data-aos][data-aos-eas
   width: 79px;
   height: 8px;
   margin-left: 55%;
+}
+
+nav#menu.menu a {
+  border: none;
+  padding: 1em;
+  font-family: Arial;
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+nav#menu.menu a:hover {
+  color: #556854;
+}
+
+.menubtn {
+  display: none;
+}
+
+nav#menu.menu ul, nav#menu.menu ul li {
+  z-index: 99;
+  background: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav#menu.menu > ul > li > a {
+  text-transform: uppercase;
+}
+
+@media screen and (width >= 501px) {
+  nav#menu.menu .parent {
+    position: relative;
+  }
+
+  nav#menu.menu > ul > li {
+    display: inline-block;
+  }
+
+  nav#menu.menu > ul {
+    text-align: center;
+  }
+
+  .sousrubrique {
+    visibility: hidden;
+    z-index: -1;
+    opacity: 0;
+    text-align: left;
+    filter: progid:DXImageTransform. Microsoft. Shadow(color= #656565, Direction= 135, Strength= 5);
+    background: none;
+    min-width: 160px;
+    transition: all .3s ease-in-out, visibility 0s linear .3s, z-index 0s linear 10ms;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: translateY(-2em);
+  }
+
+  nav#menu.menu > ul > li > ul > li {
+    float: none;
+  }
+
+  nav#menu.menu ul, nav#menu.menu ul li {
+    overflow: visible;
+  }
+
+  nav#menu.menu ul li:hover .sousrubrique {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0s, 0s, .3s;
+    transform: translateY(0);
+  }
 }
 /*# sourceMappingURL=index.b10d73a7.css.map */

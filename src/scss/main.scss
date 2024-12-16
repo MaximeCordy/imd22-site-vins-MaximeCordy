@@ -8,6 +8,37 @@ a {
   color: inherit;
   text-decoration: none;
 }
+.iconheader i {
+  color: #fff;
+  scale: 0.7;
+}
+.iconheader {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 13%;
+}
+.iconheader2 i {
+  color: #000;
+  scale: 0.7;
+}
+.iconheader2 {
+  color: #000;
+  display: flex;
+  flex-direction: row;
+  gap: 13%;
+}
+
+.bigheader {
+  display: flex;
+  width: 157px;
+  align-items: center;
+  gap: 13%;
+  align-items: flex-end;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 87%;
+}
 .header {
   display: flex;
   width: 100%;
@@ -25,6 +56,7 @@ a {
   line-height: normal;
   text-decoration: none;
 }
+
 .header2 {
   display: flex;
   width: 100%;
@@ -69,6 +101,14 @@ a {
   margin-top: 25%;
   margin-left: 25%;
   margin-bottom: 5%;
+}
+.vinmenu {
+  color: var(--white, #fff);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 img,
@@ -137,6 +177,7 @@ video {
   text-align: end;
   margin-right: 2%;
   margin-bottom: 1%;
+  margin-top: 1%;
 }
 .headergauche,
 .headerdroite {
@@ -938,4 +979,73 @@ button:hover {
   border-radius: 48px;
   background: var(--red, #800000);
   margin-left: 55%;
+}
+
+nav#menu.menu a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  border: none;
+  font-family: Arial;
+  font-size: 16px;
+}
+nav#menu.menu a:hover {
+  color: #556854;
+}
+.menubtn {
+  display: none;
+}
+nav#menu.menu ul,
+nav#menu.menu ul li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  z-index: 99;
+  background: transparent;
+}
+nav#menu.menu > ul > li > a {
+  text-transform: uppercase;
+}
+
+/* AFFICHAGE SUR ECRAN > 501 PX DE LARGE */
+
+@media screen and (min-width: 501px) {
+  nav#menu.menu .parent {
+    position: relative;
+  }
+  nav#menu.menu > ul > li {
+    display: inline-block;
+  }
+  nav#menu.menu > ul {
+    text-align: center;
+  }
+  .sousrubrique {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    min-width: 160px;
+    left: 0;
+    z-index: -1;
+    background: transparent;
+    opacity: 0;
+    text-align: left;
+    transform: translateY(-2em);
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s,
+      z-index 0s linear 10ms;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=135, Strength=5);
+  }
+  nav#menu.menu > ul > li > ul > li {
+    float: none;
+  }
+  nav#menu.menu ul,
+  nav#menu.menu ul li {
+    overflow: visible;
+  }
+  nav#menu.menu ul li:hover .sousrubrique {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0);
+    transition-delay: 0s, 0s, 0.3s;
+  }
 }

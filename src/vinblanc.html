@@ -33,6 +33,10 @@
 </html>
 <body>
   <div class="bigheader">
+    <div class="iconheader2">
+      <i class="fa-solid fa-user"></i>
+      <i class="fa-solid fa-basket-shopping"></i>
+    </div>
     <div class="languehaut">
       <div class="language-selector">
         <button class="language-button" id="selectedLanguage">Langues</button>
@@ -49,7 +53,15 @@
       <div class="headergauche2">
         <p>Vente en ligne</p>
         <p>Philosophie</p>
-        <a href="../src/index.html"><p>Vins</p></a>
+        <a href="#menu" class="menubtn">MENU</a>
+        <nav id="menu" class="menu" role="navigation">
+        <ul>
+        <li class="parent sousmenu"><a href="#">Vins</a>
+            <ul class="sousrubrique">
+            <li><a href="../src/vinrouge.html">Blanc</a></li>
+            <li><a href="../src/vinblanc.html">Rouge</a></li>
+            </ul>
+        </li>
       </div>
       <div class="logo">
         <a href="../src/index.html">
