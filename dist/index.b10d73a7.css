@@ -7,6 +7,7 @@
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 .header {
@@ -18,11 +19,18 @@ a {
   gap: 105px;
   width: 100%;
   padding-top: 5px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
   display: flex;
 }
 
 .header2 {
   border: 1px solid var(--white, #000);
+  color: var(--black, #000);
   border-radius: 30px 10px 30px 30px;
   flex-shrink: 0;
   justify-content: center;
@@ -30,6 +38,12 @@ a {
   gap: 105px;
   width: 100%;
   padding-top: 5px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
   display: flex;
 }
 
@@ -45,7 +59,6 @@ a {
   color: var(--black, #000);
   align-items: center;
   gap: 10px;
-  width: 451px;
   margin-top: 10%;
   margin-left: -9%;
   font-family: Montserrat;
@@ -58,6 +71,7 @@ a {
 
 .imgbouteille {
   margin-top: 25%;
+  margin-bottom: 5%;
   margin-left: 25%;
 }
 
@@ -5243,6 +5257,7 @@ h1 {
   flex-direction: column;
   flex-shrink: 0;
   align-items: center;
+  max-width: 100%;
   padding: 7px 10px;
   display: flex;
 }
@@ -5442,7 +5457,12 @@ i {
 }
 
 .debutfooter {
-  background: var(--info-footer-top, #bebebe);
+  margin-top: -10%;
+  padding: 10px;
+}
+
+.gris {
+  background-color: #bebebe;
 }
 
 .logofooter {
@@ -5459,9 +5479,9 @@ i {
 }
 
 .language-button {
-  color: var(--black, #fff);
+  color: var(--black, #828282);
   text-align: center;
-  border: 1px solid var(--black, #fff);
+  border: 1px solid var(--black, #828282);
   cursor: pointer;
   border-radius: 30px 15px 30px 30px;
   justify-content: center;
@@ -5478,13 +5498,9 @@ i {
   display: flex;
 }
 
-.language-button:hover {
-  background-color: #fff0;
-}
-
 .language-menu {
   z-index: 1000;
-  background-color: #0000;
+  background-color: #bebebe;
   border-radius: 5px;
   display: none;
   position: absolute;
@@ -5494,7 +5510,8 @@ i {
 }
 
 .language-menu a {
-  color: #fff;
+  color: #000;
+  background-color: #0000;
   padding: 10px 20px;
   font-family: Montserrat;
   font-size: 16px;
@@ -5506,7 +5523,7 @@ i {
 }
 
 .language-menu a:hover {
-  background-color: #0000;
+  background-color: #f5f5f5;
 }
 
 .footer2 {
@@ -5678,10 +5695,232 @@ button:hover {
 .containerfooter {
   flex-shrink: 0;
   gap: 27px;
-  margin-top: 200px;
+  margin-top: 20%;
 }
 
 body[data-aos-easing="new-easing"] [data-aos], [data-aos][data-aos][data-aos-easing="new-easing"] {
   transition-timing-function: cubic-bezier(.25, .25, .75, .75);
+}
+
+.container {
+  margin-bottom: 5%;
+}
+
+.header3 {
+  color: var(--black, #000);
+  text-transform: uppercase;
+  font-family: Encode Sans Expanded;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.arrow {
+  font-size: 20px;
+}
+
+.textcard5 {
+  text-align: center;
+  color: var(--black, #000);
+  text-align: center;
+  margin-left: 7%;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.titragevin {
+  margin-top: 5%;
+  margin-bottom: 4%;
+}
+
+.accordviande {
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  place-content: center;
+  align-items: center;
+  width: 546px;
+  height: 189px;
+  margin-left: 29%;
+  display: flex;
+}
+
+.passion {
+  align-self: stretch;
+  align-items: center;
+  gap: 99px;
+  display: flex;
+}
+
+.gras {
+  color: var(--black, #000);
+  width: 186px;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.info {
+  color: var(--black, #000);
+  width: 261px;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.infopassion {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: 546px;
+  display: flex;
+}
+
+.tempinfo {
+  color: var(--black, #000);
+  text-align: center;
+  margin-left: -43%;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.temp {
+  flex-direction: column;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 119px;
+  height: 150px;
+  display: flex;
+}
+
+.infoicon {
+  flex-wrap: wrap;
+  align-content: flex-end;
+  align-items: flex-end;
+  gap: 10px 20px;
+  width: 259px;
+  margin-top: -22%;
+  margin-left: 70%;
+  display: flex;
+}
+
+.blanc {
+  background: var(--white, #fff);
+  border-radius: 18px;
+  flex-shrink: 0;
+  width: 70%;
+  height: 6px;
+}
+
+.vert1 {
+  background-color: var(--vert, #556854);
+  flex-shrink: 0;
+  width: 79px;
+  height: 8px;
+  margin-left: 65%;
+}
+
+.vert2 {
+  background-color: var(--vert, #556854);
+  flex-shrink: 0;
+  width: 79px;
+  height: 8px;
+  margin-left: 60%;
+}
+
+.vert3 {
+  background-color: var(--vert, #556854);
+  flex-shrink: 0;
+  width: 79px;
+  height: 8px;
+  margin-left: 45%;
+}
+
+.vert4 {
+  background-color: var(--vert, #556854);
+  flex-shrink: 0;
+  width: 79px;
+  height: 8px;
+  margin-left: 65%;
+}
+
+.textgout {
+  color: var(--black, #000);
+  flex-shrink: 0;
+  width: 57px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.ligne {
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 5%;
+  display: flex;
+}
+
+.tableaugout {
+  flex-direction: column;
+  margin-top: 5%;
+  margin-left: 10%;
+  display: flex;
+}
+
+.imgbouteille2 {
+  margin-top: 20%;
+  margin-bottom: 5%;
+  margin-left: 25%;
+}
+
+.rouge1 {
+  background: var(--red, maroon);
+  border-radius: 48px;
+  flex-shrink: 0;
+  width: 79px;
+  height: 8px;
+  margin-left: 55%;
+}
+
+.rouge2 {
+  background: var(--red, maroon);
+  border-radius: 48px;
+  flex-shrink: 0;
+  width: 79px;
+  height: 8px;
+  margin-left: 50%;
+}
+
+.rouge3 {
+  background: var(--red, maroon);
+  border-radius: 48px;
+  flex-shrink: 0;
+  width: 79px;
+  height: 8px;
+  margin-left: 25%;
+}
+
+.rouge4 {
+  background: var(--red, maroon);
+  border-radius: 48px;
+  flex-shrink: 0;
+  width: 79px;
+  height: 8px;
+  margin-left: 55%;
 }
 /*# sourceMappingURL=index.b10d73a7.css.map */

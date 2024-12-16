@@ -22,10 +22,6 @@
 //   const menu = document.getElementById("languageMenu");
 //   menu.style.display = menu.style.display === "block" ? "none" : "block";
 // }
-import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
-// ..
-AOS.init();
 
 var selectors = document.querySelectorAll(".language-selector");
 
@@ -62,3 +58,8 @@ function toggleContent(index) {
     arrow.style.transform = "rotate(180deg)";
   }
 }
+
+// Initialiser AOS après le chargement du DOM
+document.addEventListener("DOMContentLoaded", () => {
+  AOS.init();
+});

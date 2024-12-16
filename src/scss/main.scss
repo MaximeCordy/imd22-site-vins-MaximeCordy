@@ -6,6 +6,7 @@
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 .header {
   display: flex;
@@ -17,6 +18,12 @@ a {
   flex-shrink: 0;
   border-radius: 30px 10px 30px 30px;
   border: 1px solid var(--white, #fff);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
 }
 .header2 {
   display: flex;
@@ -28,6 +35,13 @@ a {
   flex-shrink: 0;
   border-radius: 30px 10px 30px 30px;
   border: 1px solid var(--white, #000);
+  color: var(--black, #000);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
 }
 .headergauche2,
 .headerdroite2 {
@@ -39,7 +53,7 @@ a {
 }
 .bredcrum {
   display: flex;
-  width: 451px;
+
   align-items: center;
   gap: 10px;
   color: var(--black, #000);
@@ -54,6 +68,7 @@ a {
 .imgbouteille {
   margin-top: 25%;
   margin-left: 25%;
+  margin-bottom: 5%;
 }
 
 img,
@@ -271,6 +286,7 @@ h1 {
   flex-shrink: 0;
   border-radius: 30px 10px 30px 30px;
   border: 2px solid var(--black, #000);
+  max-width: 100%;
 }
 
 .background-video {
@@ -461,9 +477,13 @@ i {
 }
 
 .debutfooter {
-  background: var(--info-footer-top, #bebebe);
+  padding: 10px;
+  margin-top: -10%;
 }
 
+.gris {
+  background-color: #bebebe;
+}
 .logofooter {
   height: 52px;
   padding: 10px;
@@ -478,7 +498,7 @@ i {
 }
 
 .language-button {
-  color: var(--black, #ffffff);
+  color: var(--black, #828282);
   text-align: center;
   font-family: Montserrat;
   font-size: 16px;
@@ -488,7 +508,7 @@ i {
   display: flex;
   align-items: flex-start;
   border-radius: 30px 15px 30px 30px;
-  border: 1px solid var(--black, #ffffff);
+  border: 1px solid var(--black, #828282);
   display: flex;
   width: 76px;
   height: 31px;
@@ -500,16 +520,12 @@ i {
   transition: background-color 0.3s;
 }
 
-.language-button:hover {
-  background-color: #ffffff00;
-}
-
 .language-menu {
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: transparent;
+  background-color: #bebebe;
 
   border-radius: 5px;
   overflow: hidden;
@@ -524,13 +540,14 @@ i {
   font-weight: 300;
   line-height: normal;
   padding: 10px 20px;
-  color: white;
+  color: black;
   text-decoration: none;
   font-size: 16px;
+  background-color: transparent;
 }
 
 .language-menu a:hover {
-  background-color: transparent;
+  background-color: whitesmoke;
 }
 .footer2 {
   display: flex;
@@ -697,7 +714,7 @@ button:hover {
 .containerfooter {
   gap: 27px;
   flex-shrink: 0;
-  margin-top: 200px;
+  margin-top: 20%;
 }
 
 //animation//
@@ -706,4 +723,219 @@ button:hover {
   &[data-aos][data-aos-easing="new-easing"] {
     transition-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
   }
+}
+
+.container {
+  margin-bottom: 5%;
+}
+
+.header3 {
+  color: var(--black, #000);
+
+  /* 2eme titre */
+  font-family: "Encode Sans Expanded";
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.arrow {
+  font-size: 20px;
+}
+.textcard5 {
+  text-align: center;
+  margin-left: 7%;
+
+  color: var(--black, #000);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.titragevin {
+  margin-top: 5%;
+  margin-bottom: 4%;
+}
+
+.accordviande {
+  display: flex;
+  width: 546px;
+  height: 189px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  margin-left: 29%;
+}
+
+.passion {
+  display: flex;
+  align-items: center;
+  gap: 99px;
+  align-self: stretch;
+}
+
+.gras {
+  color: var(--black, #000);
+
+  /* bolg text regular */
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 186px;
+}
+
+.info {
+  color: var(--black, #000);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 261px;
+}
+.infopassion {
+  display: flex;
+  width: 546px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.tempinfo {
+  color: var(--black, #000);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: -43%;
+}
+.temp {
+  display: flex;
+  width: 119px;
+  height: 150px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.infoicon {
+  display: flex;
+  width: 259px;
+  align-items: flex-end;
+  align-content: flex-end;
+  gap: 10px 20px;
+  flex-wrap: wrap;
+  margin-left: 70%;
+  margin-top: -22%;
+}
+
+.blanc {
+  width: 70%;
+  height: 6px;
+  flex-shrink: 0;
+  border-radius: 18px;
+  background: var(--white, #fff);
+}
+.vert1 {
+  width: 79px;
+  height: 8px;
+  flex-shrink: 0;
+  background-color: var(--vert, #556854);
+  margin-left: 65%;
+}
+.vert2 {
+  width: 79px;
+  height: 8px;
+  flex-shrink: 0;
+  background-color: var(--vert, #556854);
+  margin-left: 60%;
+}
+.vert3 {
+  width: 79px;
+  height: 8px;
+  flex-shrink: 0;
+  background-color: var(--vert, #556854);
+  margin-left: 45%;
+}
+.vert4 {
+  width: 79px;
+  height: 8px;
+  flex-shrink: 0;
+  background-color: var(--vert, #556854);
+  margin-left: 65%;
+}
+.textgout {
+  color: var(--black, #000);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 57px;
+
+  flex-shrink: 0;
+}
+
+.ligne {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  text-align: center;
+  align-items: center;
+}
+
+.tableaugout {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+.imgbouteille2 {
+  margin-top: 20%;
+  margin-left: 25%;
+  margin-bottom: 5%;
+}
+
+.rouge1 {
+  width: 79px;
+  height: 8px;
+  flex-shrink: 0;
+  border-radius: 48px;
+  background: var(--red, #800000);
+  margin-left: 55%;
+}
+.rouge2 {
+  width: 79px;
+  height: 8px;
+  flex-shrink: 0;
+  border-radius: 48px;
+  background: var(--red, #800000);
+  margin-left: 50%;
+}
+.rouge3 {
+  width: 79px;
+  height: 8px;
+  flex-shrink: 0;
+  border-radius: 48px;
+  background: var(--red, #800000);
+  margin-left: 25%;
+}
+.rouge4 {
+  width: 79px;
+  height: 8px;
+  flex-shrink: 0;
+  border-radius: 48px;
+  background: var(--red, #800000);
+  margin-left: 55%;
 }
