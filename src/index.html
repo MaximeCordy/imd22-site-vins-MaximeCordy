@@ -4,12 +4,25 @@
     <script
       src="https://kit.fontawesome.com/b0754b42ca.js"
       crossorigin="anonymous"
+      src="https://unpkg.com/aos@2.3.1/dist/aos.js"
     ></script>
 
     <meta charset="utf-8" />
     <title>eikon parcel starter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="scss/main.scss" />
+    <script>
+      AOS.init({
+        duration: 1200, // Durée des animations en millisecondes
+        once: true, // Animation se joue une seule fois
+      });
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -44,7 +57,7 @@
       <div class="header">
         <div class="headergauche">
           <p>Vente en ligne</p>
-          <p>Philosophie</p>
+          <a href="#Philosophie"><p>Philosophie</p></a>
           <a href="#menu" class="menubtn">MENU</a>
           <nav id="menu" class="menu" role="navigation">
             <ul>
@@ -67,9 +80,9 @@
           /></a>
         </div>
         <div class="headerdroite">
-          <p>Actualités</p>
-          <p>Evenements</p>
-          <p>Contact</p>
+          <a href="#Vigneronss"><p>Actualités</p></a>
+          <a href="#cave"> <p>Evenements</p></a>
+          <a href="#Contact"><p>Contact</p></a>
         </div>
       </div>
     </div>
@@ -94,7 +107,7 @@
         <div class="col-8 offset-md-2">
           <div
             class="premiertitreclasse"
-            data-aos="slide-up"
+            data-aos="zoom-out-up"
             data-aos="fade-in"
           >
             <div class="titreclasse">
@@ -113,7 +126,7 @@
       </div>
       <div class="row">
         <div class="col-5 offset-md-8">
-          <div class="card" data-aos="slide-up" data-aos="fade-in">
+          <div class="card" data-aos="fade">
             <div class="titrecard">Un vin pour touts les goûts !</div>
             <div class="textcard">
               <p>
@@ -132,9 +145,9 @@
 
       <div class="row">
         <div class="col-8 offset-md-2">
-          <div class="titreclasse" data-aos="slide-up" data-aos="fade-in">
+          <div class="titreclasse" data-aos="zoom-out-up" data-aos="fade-in">
             <div class="petittitre">
-              <p>NOS VIGNERONS</p>
+              <p id="Vigneronss">VIGNERONS</p>
             </div>
             <div class="Titre">
               <h2>La passion du vin</h2>
@@ -143,7 +156,7 @@
         </div>
       </div>
       <div class="vigneronimg">
-        <img src="img/vigneron.png" alt="vigneron" data-aos="fade" />
+        <img src="img/vigneron.png" alt="vigneron" />
       </div>
       <div class="row">
         <div class="col-7 offset-md-2">
@@ -160,9 +173,9 @@
       </div>
       <div class="row">
         <div class="col-8 offset-md-2">
-          <div class="titreclasse" data-aos="slide-up" data-aos="fade-in">
+          <div class="titreclasse" data-aos="zoom-out-up" data-aos="fade-in">
             <div class="petittitre">
-              <p>NOTRE PHILOSOPHIE</p>
+              <p id="Philosophie">NOTRE PHILOSOPHIE</p>
             </div>
             <div class="Titre">
               <h2>DU PASSé AU BIO</h2>
@@ -172,7 +185,7 @@
       </div>
       <div class="row">
         <div class="col-5">
-          <div class="cardbio" data-aos="slide-up" data-aos="fade-in">
+          <div class="cardbio" data-aos="fade-in">
             <div class="titrecard">DU plaisir en Chaque Goutte</div>
             <div class="textcard">
               <p>
@@ -198,9 +211,9 @@
       </div>
       <div class="row">
         <div class="col-8 offset-md-2">
-          <div class="titreclasse" data-aos="slide-up" data-aos="fade-in">
+          <div class="titreclasse" data-aos="zoom-out-up" data-aos="fade-in">
             <div class="petittitre">
-              <p>éVéNEMENT</p>
+              <p id="cave">Evenements</p>
             </div>
             <div class="Titre">
               <h2>Visitez NOTRe CAVE</h2>
@@ -281,6 +294,7 @@
             <div class="background1">
               <div class="premier">
                 <div class="petittitrefooter">
+                  <p id="Contact"></p>
                   <p>SUIVEZ-NOUS</p>
                 </div>
                 <div class="reseaux">

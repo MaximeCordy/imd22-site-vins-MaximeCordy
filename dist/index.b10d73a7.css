@@ -5,6 +5,16 @@
   padding: 0;
 }
 
+.logo {
+  transition-duration: .2s;
+  transition-delay: .2s;
+  transition-timing-function: ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -107,6 +117,13 @@ a {
   margin-top: 25%;
   margin-bottom: 5%;
   margin-left: 25%;
+  transition-duration: .5s;
+  transition-delay: .2s;
+  transition-timing-function: ease-in-out;
+}
+
+.imgbouteille:hover {
+  transform: scale(1.07);
 }
 
 .vinmenu {
@@ -5137,7 +5154,14 @@ img, video {
 .imgbouteilles {
   margin-top: -49%;
   margin-left: -7%;
+  transition-duration: .5s;
+  transition-delay: .2s;
+  transition-timing-function: ease-in-out;
   position: absolute;
+}
+
+.imgbouteilles:hover {
+  transform: scale(1.07);
 }
 
 .languehaut {
@@ -5344,9 +5368,16 @@ h1 {
 }
 
 .vigneronimg {
-  margin-top: 10%;
+  margin-top: 5%;
   margin-bottom: 5%;
   margin-left: -4%;
+  transition-duration: .2s;
+  transition-delay: .1s;
+  transition-timing-function: ease-in-out;
+}
+
+.vigneronimg:hover {
+  transform: scale(1.05);
 }
 
 .card {
@@ -5402,14 +5433,28 @@ h1 {
   margin-top: 13%;
   margin-bottom: 15%;
   margin-left: 14%;
+  transition-duration: .2s;
+  transition-delay: .1s;
+  transition-timing-function: ease-in-out;
   scale: 1.1;
 }
 
+.imgbio:hover {
+  transform: scale(1.05);
+}
+
 .cave {
-  margin-top: 10%;
+  margin-top: 5%;
   margin-bottom: 4%;
   margin-left: -3%;
+  transition-duration: .2s;
+  transition-delay: .1s;
+  transition-timing-function: ease-in-out;
   scale: .9;
+}
+
+.cave:hover {
+  transform: scale(1.05);
 }
 
 button {
@@ -5930,6 +5975,13 @@ body[data-aos-easing="new-easing"] [data-aos], [data-aos][data-aos][data-aos-eas
   margin-top: 20%;
   margin-bottom: 5%;
   margin-left: 25%;
+  transition-duration: .5s;
+  transition-delay: .2s;
+  transition-timing-function: ease-in-out;
+}
+
+.imgbouteille2:hover {
+  transform: scale(1.07);
 }
 
 .rouge1 {

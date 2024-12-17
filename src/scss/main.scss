@@ -3,7 +3,14 @@
   margin: 0;
   padding: 0;
 }
-
+.logo {
+  transition-duration: 0.2s;
+  transition-delay: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -101,7 +108,15 @@ a {
   margin-top: 25%;
   margin-left: 25%;
   margin-bottom: 5%;
+  transition-duration: 0.5s;
+  transition-delay: 0.2s;
+  transition-timing-function: ease-in-out;
 }
+
+.imgbouteille:hover {
+  transform: scale(1.07);
+}
+
 .vinmenu {
   color: var(--white, #fff);
   font-family: Montserrat;
@@ -171,6 +186,13 @@ video {
   position: absolute;
   margin-top: -49%;
   margin-left: -7%;
+  transition-duration: 0.5s;
+  transition-delay: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.imgbouteilles:hover {
+  transform: scale(1.07);
 }
 
 .languehaut {
@@ -366,8 +388,14 @@ h1 {
 }
 .vigneronimg {
   margin-left: -4%;
-  margin-top: 10%;
+  margin-top: 5%;
   margin-bottom: 5%;
+  transition-duration: 0.2s;
+  transition-delay: 0.1s;
+  transition-timing-function: ease-in-out;
+}
+.vigneronimg:hover {
+  transform: scale(1.05);
 }
 .card {
   display: flex;
@@ -419,12 +447,25 @@ h1 {
   margin-left: 14%;
   margin-bottom: 15%;
   scale: 1.1;
+  transition-duration: 0.2s;
+  transition-delay: 0.1s;
+  transition-timing-function: ease-in-out;
+}
+
+.imgbio:hover {
+  transform: scale(1.05);
 }
 .cave {
   margin-left: -3%;
-  margin-top: 10%;
+  margin-top: 5%;
   margin-bottom: 4%;
   scale: 0.9;
+  transition-duration: 0.2s;
+  transition-delay: 0.1s;
+  transition-timing-function: ease-in-out;
+}
+.cave:hover {
+  transform: scale(1.05);
 }
 button {
   display: flex;
@@ -946,6 +987,13 @@ button:hover {
   margin-top: 20%;
   margin-left: 25%;
   margin-bottom: 5%;
+  transition-duration: 0.5s;
+  transition-delay: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.imgbouteille2:hover {
+  transform: scale(1.07);
 }
 
 .rouge1 {
